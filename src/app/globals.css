@@ -125,15 +125,13 @@
   }
   .maplibregl-popup-content {
     @apply bg-transparent! shadow-none! p-0! rounded-none!;
-    @apply bg-transparent! shadow-none! p-0! rounded-none!;
   }
   .maplibregl-popup-tip {
-    @apply hidden!;
     @apply hidden!;
   }
 }
 
-/* Custom animations */
+/*  animations for the home page */
 @keyframes fade-up {
   from {
     opacity: 0;
@@ -184,16 +182,7 @@
 .delay-500 { animation-delay: 500ms; }
 .delay-600 { animation-delay: 600ms; }
 
-@layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-}
-
-/* Shiki dual theme support */
+/* Shiki dual theme support for code blocks */
 html .shiki,
 html .shiki span {
   color: var(--shiki-light) !important;

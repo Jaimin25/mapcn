@@ -284,7 +284,9 @@ function MarkerPopup({
       offset: 16,
       ...popupOptions,
       closeButton: false,
-    }).setDOMContent(container);
+    })
+      .setMaxWidth("none")
+      .setDOMContent(container);
 
     popupRef.current = popup;
     markerRef.current.setPopup(popup);
@@ -353,7 +355,9 @@ function MarkerTooltip({
       ...popupOptions,
       closeOnClick: true,
       closeButton: false,
-    }).setDOMContent(container);
+    })
+      .setMaxWidth("none")
+      .setDOMContent(container);
 
     popupRef.current = popup;
 
@@ -664,6 +668,7 @@ function MapPopup({
       ...popupOptions,
       closeButton: false,
     })
+      .setMaxWidth("none")
       .setDOMContent(container)
       .setLngLat([longitude, latitude]);
 

@@ -266,8 +266,14 @@ export default function ApiReferencePage() {
           >
             PopupOptions
           </DocsLink>{" "}
-          from MapLibre GL.
+          from MapLibre GL (excluding <DocsCode>className</DocsCode>).
         </p>
+        <DocsNote>
+          The <DocsCode>className</DocsCode> from MapLibre&apos;s PopupOptions
+          is excluded to prevent style conflicts. Use the component&apos;s own{" "}
+          <DocsCode>className</DocsCode> prop to style the popup content.
+          MapLibre&apos;s default popup styles are reset via CSS.
+        </DocsNote>
         <DocsPropTable
           props={[
             {
@@ -304,10 +310,17 @@ export default function ApiReferencePage() {
           >
             PopupOptions
           </DocsLink>{" "}
-          from MapLibre GL (excluding <DocsCode>closeButton</DocsCode> and{" "}
+          from MapLibre GL (excluding <DocsCode>className</DocsCode>,{" "}
+          <DocsCode>closeButton</DocsCode>, and{" "}
           <DocsCode>closeOnClick</DocsCode> as tooltips auto-dismiss on hover
           out).
         </p>
+        <DocsNote>
+          The <DocsCode>className</DocsCode> from MapLibre&apos;s PopupOptions
+          is excluded to prevent style conflicts. Use the component&apos;s own{" "}
+          <DocsCode>className</DocsCode> prop to style the tooltip content.
+          MapLibre&apos;s default popup styles are reset via CSS.
+        </DocsNote>
         <DocsPropTable
           props={[
             {
@@ -366,8 +379,14 @@ export default function ApiReferencePage() {
           >
             PopupOptions
           </DocsLink>{" "}
-          from MapLibre GL.
+          from MapLibre GL (excluding <DocsCode>className</DocsCode>).
         </p>
+        <DocsNote>
+          The <DocsCode>className</DocsCode> from MapLibre&apos;s PopupOptions
+          is excluded to prevent style conflicts. Use the component&apos;s own{" "}
+          <DocsCode>className</DocsCode> prop to style the popup content.
+          MapLibre&apos;s default popup styles are reset via CSS.
+        </DocsNote>
         <DocsPropTable
           props={[
             {
