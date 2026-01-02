@@ -64,7 +64,7 @@ export function Examples() {
       {/* Widget 1: Analytics */}
       <ExampleCard
         label="Analytics"
-        className="sm:col-span-2 aspect-2/1"
+        className="sm:col-span-2 sm:aspect-video aspect-square"
         delay="delay-400"
       >
         {/* Stats Panel */}
@@ -141,8 +141,12 @@ export function Examples() {
       </ExampleCard>
 
       {/* Widget 2: Delivery */}
-      <ExampleCard label="Delivery" className="aspect-square" delay="delay-500">
-        <Map center={[-0.1076, 51.517]} zoom={11.2}>
+      <ExampleCard
+        label="Delivery"
+        className="aspect-square lg:aspect-7/8"
+        delay="delay-500"
+      >
+        <Map center={[-0.1076, 51.517]} zoom={12}>
           <MapRoute
             coordinates={[
               [-0.1276, 51.5074],
